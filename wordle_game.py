@@ -15,6 +15,7 @@ while counter < 6:
     greens = []
     yellows = []
     finished = 0
+
     test = input(f'Enter your {counter + 1}th guess: ')
     if(len(test) != 5):
         print(f'{red}Invalid word length..!!{reset}')
@@ -25,6 +26,7 @@ while counter < 6:
     word_print = []
     for char in word:
         word_print.append(char)
+
     for j in range(5):
         if test_print[j] == word_print[j]:
             greens.append(j)
@@ -45,8 +47,8 @@ while counter < 6:
         else:
             print(f'{test[j]}', end = '')
             sol.append(0)
-    print("\t", end = '')
-    print(sol)
+    print(f'\t{sol}')
+    
     if finished == 5:
         print(f'{green}You won..!!!{reset}')
         game_finished = True
