@@ -145,7 +145,7 @@ def auto_player(n, isRandom):
             already_guessed.append(guess)
             if len(guess) != 5:
                 break
-            result = wordle_game.game(word, guess)
+            result = wordle_game.remote_game_engine(word, guess)
             if result == [2, 2, 2, 2, 2]:
                 print(f'{green}{guess}{reset}')
                 game_completed = True
