@@ -2,7 +2,7 @@ import random
 import os
 import subprocess
 
-def game(original, test):
+def remote_game_engine(original, test):
     sol = []
     yellows = []
     greens = []
