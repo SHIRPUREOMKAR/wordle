@@ -1,7 +1,7 @@
 import random
 import os
 import subprocess
-import wordle_game
+# import wordle_game
 
 red = "\033[31m"
 green = "\033[32m"
